@@ -4,19 +4,19 @@
   "publishedDefaultPageName": "Page1",
   "unpublishedDefaultPageName": "Page1",
   "invisibleActionFields": {
-    "Page2_DeleteQuery": {
+    "test_DeleteQuery": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page2_InsertQuery": {
+    "test_InsertQuery": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     },
-    "Page2_SelectQuery": {
+    "test_SelectQuery": {
       "unpublishedUserSetOnLoad": true,
       "publishedUserSetOnLoad": true
     },
-    "Page2_UpdateQuery": {
+    "test_UpdateQuery": {
       "unpublishedUserSetOnLoad": false,
       "publishedUserSetOnLoad": false
     }

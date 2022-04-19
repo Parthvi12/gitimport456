@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "postgres-plugin",
   "unpublishedAction": {
-    "name": "DeleteQuery",
+    "name": "InsertQuery",
     "datasource": {
       "name": "Users",
       "pluginId": "postgres-plugin",
@@ -13,12 +13,12 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page2",
+    "pageId": "test",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "DELETE FROM public.\"users\"\n  WHERE \"id\" = {{Table1.triggeredRow.id}};",
+      "body": "INSERT INTO public.\"users\" (\n\t\"gender\", \n\t\"latitude\",\n\t\"longitude\", \n\t\"dob\"\n)\nVALUES (\n\t\t\t\t{{insert_col_input2.text}}, \n\t\t\t\t{{insert_col_input3.text}}, \n\t\t\t\t{{insert_col_input4.text}}, \n\t\t\t\t{{insert_col_input5.text}}\n);",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -30,14 +30,17 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Table1.triggeredRow.id"
+      "insert_col_input2.text",
+      "insert_col_input3.text",
+      "insert_col_input4.text",
+      "insert_col_input5.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page2_DeleteQuery",
+  "id": "test_InsertQuery",
   "deleted": false,
-  "gitSyncId": "625e4e4af5025a4a5fa58fc1_625e4e89f5025a4a5fa58fd1"
+  "gitSyncId": "625e4e4af5025a4a5fa58fc1_625e4e89f5025a4a5fa58fce"
 }
